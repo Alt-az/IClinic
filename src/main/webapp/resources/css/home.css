@@ -1,5 +1,5 @@
 .main-content {
-    height: 75%;
+    height: 80%;
     overflow: auto;
 }
 .navbar {
@@ -12,5 +12,6 @@
     height: 10%;
 }
 .mainpage{
-    background-color: #93c4ff;
+    background-image: url("../images/clinic_photo.jpg");
+
 }

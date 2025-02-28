@@ -43,25 +43,25 @@ public class SecurityConfiguration {
         return authProvider;
     }
 
-    @Bean
-    public InMemoryUserDetailsManager userDetailsService() {
-        UserDetails user = User.withDefaultPasswordEncoder()
-                .username("user")
-                .password("user")
-                .roles("USER")
-                .build();
-        UserDetails admin = User.withDefaultPasswordEncoder()
-                .username("admin")
-                .password("admin")
-                .roles("ADMIN","USER")
-                .build();
-        UserDetails student = User.withDefaultPasswordEncoder()
-                .username("student")
-                .password("student")
-                .roles("STUDENT")
-                .build();
-        return new InMemoryUserDetailsManager(user, admin, student);
-    }
+//    @Bean
+//    public InMemoryUserDetailsManager userDetailsService() {
+//        UserDetails user = User.withDefaultPasswordEncoder()
+//                .username("user")
+//                .password("user")
+//                .roles("USER")
+//                .build();
+//        UserDetails admin = User.withDefaultPasswordEncoder()
+//                .username("admin")
+//                .password("admin")
+//                .roles("ADMIN","USER")
+//                .build();
+//        UserDetails student = User.withDefaultPasswordEncoder()
+//                .username("student")
+//                .password("student")
+//                .roles("STUDENT")
+//                .build();
+//        return new InMemoryUserDetailsManager(user, admin, student);
+//    }
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {

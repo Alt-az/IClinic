@@ -17,7 +17,7 @@
 <jsp:include page="header.jsp" />
 
 <div class="mainpage main-content">
-    <div class=" container mt-5">
+    <div class="container mt-5 bg-success bg-opacity-75 pb-1">
         <h2 class="text-center"><spring:message code="label.searchdoctors"/></h2>
         <form:form method="post" action="searchSubmit" modelAttribute="doctor">
             <div class="row mb-3">

@@ -56,6 +56,9 @@
                 <li class="nav-item active">
                     <a class="text-white nav-link" href="<c:url value='/' />">Home</a>
                 </li>
+                <li class="nav-item active">
+                    <a class="text-white nav-link" href="<c:url value='/doctor-view' />">Virtual Assistant</a>
+                </li>
                 <sec:authorize access="hasRole('ROLE_ADMIN')">
                     <li class="nav-item">
                         <a class="text-white nav-link" href="<c:url value='/admin-panel' />"><spring:message code="label.admin-panel"/></a>

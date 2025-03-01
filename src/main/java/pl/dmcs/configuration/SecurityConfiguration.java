@@ -85,6 +85,8 @@ public class SecurityConfiguration {
                         .requestMatchers("/exampleTwo*").hasAnyAuthority("ROLE_STUDENT", "ROLE_ADMIN")
                         .requestMatchers("/exampleThree*").hasRole("STUDENT")
                         .requestMatchers("/admin-panel*").hasAuthority("ROLE_ADMIN")
+                        .requestMatchers("/doctor-view*").anonymous()
+                        .requestMatchers("/chat*").anonymous()
                         .requestMatchers("/login*").anonymous()
                         .requestMatchers("/register*").anonymous()
                         .requestMatchers("/confirm*").anonymous()
